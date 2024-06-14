@@ -1,8 +1,8 @@
 terraform {
     backend "remote" {
-        hostname = "<hostname>"
+        hostname = "gurpreet1.jfrog.io"
         organization = "tfstate"
-        token = "<token>"
+        token = "cmVmdGtuOjAxOjE3NDk4OTczMjE6cUxZWnppWldzRFFLVlJkbTk3QkVwNTE1S0Fj"
         workspaces {
           name = "dev"
             # prefix = "my-prefix-"
