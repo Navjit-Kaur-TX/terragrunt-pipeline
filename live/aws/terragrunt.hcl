@@ -1,6 +1,6 @@
 terraform {
     source = "../..//modules"
 }
-include "root" {
+include {
     path = find_in_parent_folders()
 }
