@@ -16,11 +16,23 @@ variable "instance_count_needed" {
   default = "false"
 }
 
+variable "jfrog_token" {
+  type = string
+}
+
 variable "instance_count" {
   default = 1
 }
 
 terraform {
+  backend {
+    hostname     = "gurpreet1.jfrog.io"
+    organization = "tf2"
+    token = var.jfrog_token
+    workspaces {
+      prefix = "my-prefix-"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
