@@ -20,6 +20,11 @@ variable "instance_count" {
   default = 1
 }
 
+variable "backend_token" {
+  type        = string
+  description = "Token for the Terraform backend"
+}
+
 terraform {
   required_providers {
     aws = {
