@@ -25,7 +25,7 @@ provider "aws" {
   profile = "default"
   region  = var.region
   access_key = ${{ secrets.ACCESS_KEY }}
-  secret_key = ${{ secrets.SECRET }}
+  secret_key = ${{ secrets.SECRET_KEY }}
 }
 
 resource "aws_instance" "app_server" {
