@@ -26,9 +26,6 @@ variable "instance_count" {
 
 terraform {
   backend "remote" {
-    hostname     = "gurpreet1.jfrog.io"
-    organization = "tf2"
-    #token = var.jfrog_token
     workspaces {
       prefix = "my-prefix-"
     }
