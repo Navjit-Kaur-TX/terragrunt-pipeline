@@ -25,11 +25,11 @@ variable "instance_count" {
 }
 
 terraform {
-  backend "remote" {
-    workspaces {
-      prefix = "my-prefix-"
-    }
-  }
+#  backend "remote" {
+#    workspaces {
+#      prefix = "my-prefix-"
+#    }
+#  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
