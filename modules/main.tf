@@ -27,7 +27,7 @@ variable "instance_count" {
 terraform {
   backend "remote" {
     workspaces {
-      prefix = "my-prefix-"
+      prefix = "jfrog-ws1"
     }
   }
   required_providers {
