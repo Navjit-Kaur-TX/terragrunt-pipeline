@@ -56,6 +56,14 @@ resource "aws_instance" "app_server" {
   }
 }
 
+terraform {
+  backend "remote" {
+    workspaces {
+      prefix = "my-prefix-"
+    }
+  }
+}
+
 # terraform {  
 #   backend "s3" {
 
