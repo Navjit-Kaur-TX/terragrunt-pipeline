@@ -5,7 +5,7 @@ remote_state {
   backend = "remote"
   config = {
     hostname = "navjit10.jfrog.io"
-    organization = "tf1"
+    organization = "tf-trial"
     token = local.jfrog_token
   }
 }
