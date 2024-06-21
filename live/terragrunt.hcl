@@ -4,8 +4,8 @@ locals {
 remote_state {
   backend = "remote"
   config = {
-    hostname = "gurpreet1.jfrog.io"
-    organization = "tf2"
+    hostname = "navjit10.jfrog.io"
+    organization = "tf1"
     token = local.jfrog_token
   }
 }
